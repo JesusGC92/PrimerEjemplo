@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="app.js">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
+    <title>Validación de formulario</title>
+</head>
+
+<body onload="iniciar()">
+    <h1>Formulario de registro</h1>
+    <table>
+        <form name="formulario" id="formulario">
+            <tr>
+                <td>
+                    <label for="nombre">Nombre:</label>
+                </td>
+                <td>
+                    <input type="text" name="nombre" minlength="3" autofocus required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="apellidos">Apellidos:</label>
+                </td>
+                <td>
+                    <input type="text" name="apellidos" minlength="7" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="correo">Correo electrónico:</label>
+                </td>
+                <td>
+                    <input type="text" name="correo" placeholder="ejemplo@hotmail.com"
+                        pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                </td>
+                <td>
+                    <input type="date" name="fechaNacimiento" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="edad">Edad:</label>
+                </td>
+                <td>
+                    <input type="number" name="edad">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="direccion">Dirección:</label>
+                </td>
+                <td>
+                    <input type="text" name="direccion">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="localidad">Localidad:</label>
+                </td>
+                <td>
+                    <input type="text" name="localidad">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="prov">Provincia:</label>
+                </td>
+                <td>
+                    <input list="prov" name="provincia">
+                    <datalist id="prov" name="provincia">
+                        <option value="sevilla">Sevilla</option>
+                        <option value="huelva">Huelva</option>
+                        <option value="malaga">Malaga</option>
+                        <option value="jaen">Jaen</option>
+                        <option value="cordoba">Cordoba</option>
+                        <option value="almeria">Almeria</option>
+                        <option value="granada">Granada</option>
+                        <option value="cadiz">Cadiz</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="telefono">Teléfono:</label>
+                </td>
+                <td>
+                    <input type="tel" name="telefono" required pattern="[69]{1}[0-9]{8}"
+                        title="El telefono tiene que tener 9 digitos">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="color">Color favorito:</label>
+                </td>
+                <td>
+                    <input type="color" name="colorFav">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="observaciones">Observaciones:</label>
+                </td>
+                <td>
+                    <textarea id="observaciones" name="observaciones" required></textarea>
+                </td>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="enviar" value="Enviar">
+                </td>
+            </tr>
+            </tr>
+        </form>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+table {
+    width: 100%;
+    max-width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: block;
+    overflow-x: auto;
+    border-spacing: 8px;
+    border: solid 2px;
+    border-radius: 20px 20px 20px 20px;
+    background-image: url("formbackground.png");
+    font-family: 'Kanit', sans-serif;
+
+}
+
+h1 {
+    background-color: aqua;
+    margin-top: -5px;
+    margin-bottom: -10px;
+    margin-left: 37%;
+    margin-right: 37%;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    background-image: url("titulobg.png");
+    border: solid 2px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+label {
+    font-weight: bolder;
+    text-shadow: 2px 1px 1px white;
+}
+
+table input[type="submit"] {
+    display: block;
+    margin: auto;
+    width: 70px;
+}
+
+input:invalid {
+    background-color: lightcoral;
+}
+
+textarea {
+    resize: none;
+    width: 200px;
+    height: 50px;
+}
